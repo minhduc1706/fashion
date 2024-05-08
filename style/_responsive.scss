@@ -1,0 +1,36 @@
+// header
+// @media screen and (min-width: 850px) and (max-width: 1024px) {
+//     .header-top .wrapper .left {
+//         width: 36%;
+//       }
+//       .header-top .wrapper .right {
+//         width: 64%;
+//       }
+
+// }
+
+// @media screen and (min-width: 992px) {
+//   .container {
+//     padding: 0 32px;
+//   }
+//   .desktop-hide {
+//     display: none;
+//   }
+// }
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 12px 32px;
+  }
+  .mobile-hide{
+    display: none;
+  }
+  .desktop-hide{
+    display: block;
+  }
+ 
+
+  // .desktop-hide {
+  //   display: none;
+  // }
+}

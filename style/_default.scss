@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #ffffff;
+  color: $dark-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexitem {
+  display: flex;
+  align-items: center;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
