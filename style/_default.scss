@@ -52,3 +52,59 @@ img {
   flex-direction: column;
   gap: 16px;
 }
+
+.object-cover img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.primary-button, .secondary-button, .light-button{
+  font-size: 13px;
+  border-radius: 32px;
+  padding: 4px 32px;
+  height: auto;
+  width: fit-content;
+  transition: all 0.5s;
+}
+
+.primary-button{
+  background-color: $primary-color2;
+  color: #fff;
+}
+
+.primary-button:hover{
+  background-color: $dark-color;
+}
+
+.secondary-button{
+  background-color: $secondary-dark-color;
+  color: #fff;
+}
+.secondary-button:hover{
+  background-color: $light-bg-color;
+  color: $secondary-color;
+}
+
+.light-button{
+  background-color: $light-bg-color;
+  color: #fff;
+}
+.light-button:hover{
+  background-color: $secondary-dark-color;
+  color: white;
+}
+
+.view-all{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s;
+}
+
+.view-all:hover{
+  color: $light-text-color;
+}

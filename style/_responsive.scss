@@ -17,20 +17,19 @@
 //     display: none;
 //   }
 // }
-
+@media screen and (min-width: 992px) {
+  .desktop-hide {
+    display: none;
+  }
+}
 @media screen and (max-width: 992px) {
   .container {
     padding: 12px 32px;
   }
-  .mobile-hide{
+  .mobile-hide {
     display: none;
   }
-  .desktop-hide{
+  .desktop-hide {
     display: block;
   }
- 
-
-  // .desktop-hide {
-  //   display: none;
-  // }
 }
