@@ -6,6 +6,9 @@
 .main-links a:hover {
   color: $light-text-color;
 }
+.second-links > li > a {
+  display: flex;
+}
 
 .icon-small,
 .icon-large {
@@ -16,7 +19,7 @@
 }
 .icon-small {
   font-size: 20px;
-  margin: auto;
+  margin-left: auto;
 }
 .icon-large {
   font-size: 28px;
@@ -182,7 +185,7 @@ nav .mega {
   display: none;
 }
 
-nav li.has-child:hover .mega{
+nav li.has-child:hover .mega {
   display: block;
 }
 
@@ -246,25 +249,156 @@ nav .mega .products .text-content h4 {
   color: $secondary-dark-color;
 }
 
-
-.header-main{
+.header-main {
   background-color: $secondary-dark-color;
   padding: 24px 0;
   margin-bottom: 32px;
 }
 
-.dpt-cat{
+.dpt-cat {
   position: relative;
-  z-index: 10;
+  // z-index: 10;
 }
 
-.dpt-cat .dpt-head{
+.dpt-cat .dpt-head {
   position: relative;
   width: 300px;
   padding: 20px 28px;
   background-color: $primary-color2;
   border-radius: 7px 7px 0 0;
-  
+  color: white;
+  margin-bottom: -24px;
 }
+
+.dpt-cat .dpt-head .mini-text {
+  color: $light-bg-color;
+}
+
+.dpt-cat .dpt-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+}
+
+.header-main .right {
+  flex: 1;
+  max-width: 900px;
+  margin-left: auto;
+}
+
+form {
+  position: relative;
+}
+
+form.search input {
+  line-height: 52px;
+  padding: 0 112px 0 52px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+form.search :where(span, button) {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  padding: 12px 20px;
+  color: $light-text-color;
+  height: 100%;
+}
+
+form.search button {
+  border: 0;
+  outline: 0;
+  right: 0;
+  font-size: 16px;
+  border-radius: 0 7px 7px 0;
+  background-color: $primary-color2;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+form.search button:hover {
+  cursor: pointer;
+  background-color: $dark-color;
+}
+
+.dpt-menu > ul > li > a {
+  font-size: 13px;
+  height: 46px;
+  align-items: center;
+}
+.dpt-menu > ul > li > a > .icon-small {
+  font-size: 12px;
+}
+.dpt-menu > ul > li > a > .icon-large {
+  font-size: 16px;
+}
+.dpt-menu .has-child > ul,
+.dpt-menu .mega {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  line-height: 40px;
+  padding: 24px;
+  border: 1px solid $boder-color;
+  border-top: 0;
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.dpt-menu .has-child:hover > ul {
+  display: block;
+}
+
+.dpt-menu .has-child:hover .mega {
+  display: flex;
+}
+
+.dpt-menu .mega {
+  display: none;
+  min-width: 100%;
+  width: auto;
+}
+
+.dpt-menu .beauty ul {
+  background-image: url(../assets/menu/menu_bg1.jpg);
+}
+.dpt-menu .electric ul {
+  background-image: url(../assets/menu/menu_bg2.jpg);
+}
+.dpt-menu .fashion ul {
+  background-image: url(../assets/menu/menu_bg3.jpg);
+}
+.dpt-menu .homekit .mega {
+  background-image: url(../assets/menu/menu_bg4.jpg);
+}
+.dpt-menu .has-child > .mega::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.dpt-menu .has-child ul li a:hover {
+  text-decoration: underline;
+}
+
 
 @import "responsive";
