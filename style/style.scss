@@ -2,39 +2,6 @@
 @import "default";
 
 // header-top
-.second-links a:hover,
-.main-links a:hover {
-  color: $light-text-color;
-}
-.second-links > li > a {
-  display: flex;
-}
-
-.icon-small,
-.icon-large {
-  display: flex;
-  align-items: center;
-  padding: 0 4px;
-  font-weight: normal;
-}
-.icon-small {
-  font-size: 20px;
-  margin-left: auto;
-}
-.icon-large {
-  font-size: 28px;
-  padding: 0 12px 0 0;
-}
-.icon-text {
-  font-size: 13px;
-}
-
-header li > a {
-  display: flex;
-  position: relative;
-  transition: all 0.3s;
-}
-
 .header-top .wrapper {
   font-size: 14px;
   font-weight: 300;
@@ -58,7 +25,10 @@ header li > a {
   line-height: 32px;
   display: none;
 }
-.header-top .right ul ul li a {
+:where(.header-top, .thetop-nav) .right .current a {
+  background-color: $boder-color;
+}
+:where(.header-top, .thetop-nav) .right ul ul li a {
   padding: 4px 16px;
 }
 .header-top li:hover ul {
@@ -160,7 +130,7 @@ nav .fly-item {
   gap: 10px;
 }
 
-nav .mega .wrapper {
+.header-nav nav .mega .wrapper {
   display: flex;
 }
 
@@ -172,7 +142,7 @@ nav .mega .wrapper {
   z-index: 1;
 }
 
-nav .mega {
+.header-nav nav .mega {
   position: absolute;
   left: 0;
   right: 0;
@@ -190,7 +160,7 @@ nav li.has-child:hover .mega {
 }
 
 nav .mega h4 {
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
@@ -338,8 +308,8 @@ form.search button:hover {
 .dpt-menu > ul > li > a > .icon-large {
   font-size: 16px;
 }
-.dpt-menu .has-child > ul,
-.dpt-menu .mega {
+.dpt-cat .dpt-menu .has-child > ul,
+.dpt-cat .dpt-menu .mega {
   position: absolute;
   top: 0;
   left: 100%;
@@ -356,33 +326,31 @@ form.search button:hover {
   display: none;
 }
 
-.dpt-menu .has-child:hover > ul {
+.dpt-cat .dpt-menu .has-child:hover ul {
   display: block;
 }
-
-.dpt-menu .has-child:hover .mega {
+.dpt-cat .dpt-menu .has-child:hover .mega {
   display: flex;
 }
 
 .dpt-menu .mega {
-  display: none;
   min-width: 100%;
   width: auto;
 }
 
-.dpt-menu .beauty ul {
+.dpt-cat .dpt-menu .beauty ul {
   background-image: url(../assets/menu/menu_bg1.jpg);
 }
-.dpt-menu .electric ul {
+.dpt-cat .dpt-menu .electric ul {
   background-image: url(../assets/menu/menu_bg2.jpg);
 }
-.dpt-menu .fashion ul {
+.dpt-cat .dpt-menu .fashion ul {
   background-image: url(../assets/menu/menu_bg3.jpg);
 }
-.dpt-menu .homekit .mega {
+.dpt-cat .dpt-menu .homekit .mega {
   background-image: url(../assets/menu/menu_bg4.jpg);
 }
-.dpt-menu .has-child > .mega::before {
+.dpt-cat .dpt-menu .has-child > .mega::before {
   content: "";
   position: absolute;
   top: 0;
@@ -399,6 +367,5 @@ form.search button:hover {
 .dpt-menu .has-child ul li a:hover {
   text-decoration: underline;
 }
-
 
 @import "responsive";
