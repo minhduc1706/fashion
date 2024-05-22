@@ -151,7 +151,7 @@ nav .fly-item {
   background-color: $light-bg-color;
   line-height: 32px;
   box-shadow: 0 30px 20px 30px rgb(0 0 0 / 20%);
-  z-index: 1;
+  z-index: 20;
   display: none;
 }
 
@@ -227,7 +227,7 @@ nav .mega .products .text-content h4 {
 
 .dpt-cat {
   position: relative;
-  // z-index: 10;
+  z-index: 10;
 }
 
 .dpt-cat .dpt-head {
@@ -316,7 +316,7 @@ form.search button:hover {
   width: 100%;
   height: auto;
   min-height: 100%;
-  line-height: 40px;
+  line-height: 30px;
   padding: 24px;
   border: 1px solid $boder-color;
   border-top: 0;
@@ -325,17 +325,15 @@ form.search button:hover {
   background-repeat: no-repeat;
   display: none;
 }
+.dpt-cat .dpt-menu .mega {
+  width: auto;
+}
 
 .dpt-cat .dpt-menu .has-child:hover ul {
   display: block;
 }
 .dpt-cat .dpt-menu .has-child:hover .mega {
   display: flex;
-}
-
-.dpt-menu .mega {
-  min-width: 100%;
-  width: auto;
 }
 
 .dpt-cat .dpt-menu .beauty ul {
@@ -367,5 +365,69 @@ form.search button:hover {
 .dpt-menu .has-child ul li a:hover {
   text-decoration: underline;
 }
+
+.slider .item {
+  position: relative;
+  height: 500px;
+}
+.slider .item::before{
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  top: 30%;
+  background-color: #fff;
+  filter: blur(50px);
+  z-index: 1;
+  opacity: .8;
+}
+
+.slider .text-content {
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0 0 10% 10%;
+  z-index: 10;
+}
+
+.slider h4 {
+  background-color: #333;
+  color: white;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.text-content :where(h2, h3) span:first-child {
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.text-content :where(h2, h3) span:last-child {
+  font-weight: 600;
+  font-size: 50px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.text-content a {
+  line-height: 32px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #333;
+}
+
+
+
+
+
+
 
 @import "responsive";
