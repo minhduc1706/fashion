@@ -439,9 +439,6 @@ form.search button:hover {
   opacity: 1;
 }
 
-
-
-
 .sectop {
   justify-content: space-between;
   padding-bottom: 8px;
@@ -463,22 +460,21 @@ form.search button:hover {
   top: -5px;
 }
 
-.products-big{
+.products-big {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.products-big .products.big{
+.products-big .products.big {
   width: 30%;
 }
-.products-big .products-mini{
+.products-big .products-mini {
   width: 68%;
 }
-.products-mini{
+.products-mini {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .trending .products-mini .products {
   flex: 0 0 48%;
@@ -489,7 +485,7 @@ form.search button:hover {
   margin-bottom: 24px;
 }
 
-.products .item{
+.products .item {
   display: flex;
   position: relative;
 }
@@ -586,19 +582,19 @@ form.search button:hover {
   z-index: 1;
 }
 
-.products .discount span{
+.products .discount span {
   position: relative;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
 }
 
-.products .content{
+.products .content {
   display: flex;
   flex-direction: column;
 }
 
-.products:where(.big, .main) .content{
+.products:where(.big, .main) .content {
   gap: 16px;
   margin-top: 20px;
 }
@@ -609,83 +605,158 @@ form.search button:hover {
   gap: 8px;
 }
 
-.products .rating .stars{
+.products .rating .stars {
   font-size: 12px;
   width: 80px;
   height: 20px;
 }
 
-.products h3{
+.products h3 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.products h3 a:hover{
+.products h3 a:hover {
   text-decoration: underline;
   color: #000;
 }
 
-.products .price .current{
+.products .price .current {
   font-size: 24px;
   color: $primary-color2;
   margin-right: 4px;
 }
 
-.products .price .normal{
+.products .price .normal {
   color: $light-text-color;
   text-decoration: line-through;
   font-size: 20px;
 }
 
-.products .stock .qty{
+.products .stock .qty {
   display: flex;
   justify-content: space-between;
 }
 
-.products .stock .bar{
+.products .stock .bar {
   height: 3px;
   margin-top: 16px;
   background-color: $boder-color;
   overflow: hidden;
 }
 
-.products .stock .available{
+.products .stock .available {
   height: 3px;
   width: 21%;
   background-color: $secondary-color;
 }
 
-.products.mini .item{
+.products.mini .item {
   margin-bottom: 32px;
 }
-.products.mini .media{
+.products.mini .media {
   width: 130px;
   height: 160px;
   margin-right: 20px;
 }
 
-.products.mini .content{
+.products.mini .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.products .stock-danger{
+.products .stock-danger {
   color: $primary-color2;
 }
 
-.products.main{
+.products.main {
   justify-content: space-between;
 }
-.products.main .item{
+.products.main .item {
   display: flex;
   flex-direction: column;
   flex: 0 0 30%;
   padding-bottom: 32px;
 }
 
-.products.main .media{
-  height: 560px
+.products.main .media {
+  height: 560px;
 }
 
+.banner .row {
+  flex: 0 0 48%;
+}
+
+.banners .item {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid $boder-color;
+}
+
+.banner.flexwrap {
+  justify-content: space-between;
+}
+
+.banner .image {
+  text-align: right;
+}
+.banner .get-gray {
+  background-color: $boder-color;
+}
+
+.banner :where(.text-content, .over-link) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .text-content{
+  padding: 24px 40px;
+}
+
+.banner h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.banner .text-content h3 span{
+  font-size: 80%;
+}
+.banner .primary-button{
+  z-index: 3;
+}
+
+.product-category .row{
+  flex: 0 0 30%;
+}
+.product-category{
+  margin-top: 30px;
+  justify-content: space-between
+}
+
+.banners .product-category .item{
+  display: flex;
+  padding: 20px;
+}
+
+.banners .product-category .item .image{
+  max-width: 150px;
+}
+
+.mini-links ul{
+  font-size: 12px;
+  color: $light-text-color;
+  margin-top: 16px;
+}
+
+.banners .second-links{
+  margin-top: 32px;
+}
+
+.mini-links li a:hover{
+  text-decoration: underline;
+}
 @import "responsive";
