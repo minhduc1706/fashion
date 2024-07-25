@@ -22,6 +22,10 @@
     width: calc(100% - (300px + 32px));
     margin-left: auto;
   }
+  
+  .products.big .media{
+    max-height: 373px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -164,5 +168,13 @@
     border: 1px solid $boder-color;
     line-height: 16px;
     margin: 0 8px;
+  }
+
+  .products-big .products.big{
+    width: 100%;
+  }
+  .products-big .products-mini{
+    margin-top: 40px;
+    width: 100%;
   }
 }

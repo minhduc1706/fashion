@@ -71,3 +71,16 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+// icon animaton 
+
+  const iconList = document.querySelectorAll('.hoverable ul li');
+
+  iconList.forEach(function(item) {
+    item.addEventListener('mouseover', function() {
+      iconList.forEach(function(li) {
+        li.classList.remove('active');
+      });
+
+      this.classList.add('active');
+    });
+  });
