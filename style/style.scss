@@ -439,6 +439,9 @@ form.search button:hover {
   opacity: 1;
 }
 
+
+
+
 .sectop {
   justify-content: space-between;
   padding-bottom: 8px;
@@ -595,7 +598,7 @@ form.search button:hover {
   flex-direction: column;
 }
 
-.products:where(.big, .main.one) .content{
+.products:where(.big, .main) .content{
   gap: 16px;
   margin-top: 20px;
 }
@@ -607,8 +610,8 @@ form.search button:hover {
 }
 
 .products .rating .stars{
-  font-size: 15px;
-  width: 100px;
+  font-size: 12px;
+  width: 80px;
   height: 20px;
 }
 
@@ -671,5 +674,18 @@ form.search button:hover {
   color: $primary-color2;
 }
 
+.products.main{
+  justify-content: space-between;
+}
+.products.main .item{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  padding-bottom: 32px;
+}
+
+.products.main .media{
+  height: 560px
+}
 
 @import "responsive";

@@ -174,7 +174,25 @@
     width: 100%;
   }
   .products-big .products-mini{
+    justify-content: center;
     margin-top: 40px;
     width: 100%;
   }
+
+  .products.main .item{
+      flex: 0 0 48%;
+  }
+  .products.main{
+    justify-content: center;
+    gap: 20px;
+  }
+  .trending .products-mini .products{
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .products.main .item{
+    flex: 0 0 100%;
+}
 }

@@ -54,11 +54,11 @@ currency.addEventListener("click", (e) => {
 
 // swipe the slide
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   navigation: {
@@ -67,20 +67,32 @@ const swiper = new Swiper('.swiper', {
   },
 
   autoplay: {
-    delay: 2000,  
-  }
+    delay: 2000,
+  },
 });
 
-// icon animaton 
+// icon animaton
 
-  const iconList = document.querySelectorAll('.hoverable ul li');
+const iconList = document.querySelectorAll(".hoverable ul li");
 
-  iconList.forEach(function(item) {
-    item.addEventListener('mouseover', function() {
-      iconList.forEach(function(li) {
-        li.classList.remove('active');
-      });
+iconList.forEach(function (item) {
+  item.addEventListener("mouseover", function () {
+    iconList.forEach(function (li) {
+      li.classList.remove("active");
+    });
 
-      this.classList.add('active');
+    this.classList.add("active");
+  });
+
+  item.addEventListener("mouseout", function () {
+    iconList.forEach(function (li) {
+      li.classList.remove("active");
+    });
+
+    iconList.forEach((li, index) => {
+      if (index % 3 === 0) {
+        li.classList.add("active");
+      }
     });
   });
+});
