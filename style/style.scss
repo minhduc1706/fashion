@@ -759,4 +759,84 @@ form.search button:hover {
 .mini-links li a:hover{
   text-decoration: underline;
 }
+
+.newsletter{
+  padding: 40px 0;
+  background-color: $dark-bg-color;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.newsletter h3{
+  font-size: 24px;
+}
+
+.newsletter p{
+  font-weight: 300;
+  color: $boder-color;
+  margin: 8px 0 20px;
+
+}
+
+.newsletter p strong{
+  color: $primary-color2;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 4px;
+}
+
+.newsletter form{
+  max-width: 500px;
+  width: 100%;
+}
+
+.newsletter .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widgets .row{
+  flex: 0 0 25%;
+}
+
+.widgets{
+  padding: 54px 40px;
+  background-color: $light-bg-color;
+}
+
+.footer-info{
+  padding: 54px 0 80px;
+}
+
+.footer-info .wrapper .flexcol{
+   align-items: center;
+   gap: 0;
+}
+
+.footer-info ul li a{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $light-bg-color;
+  border-radius: 50%;
+  margin: 2px;
+  transition: all ease-in-out .3s;
+}
+.footer-info ul li a:hover{
+  background-color: $boder-color;
+}
+
+.footer-info .logo a{
+  margin: 0 0 16px -9px;
+}
+
+.footer-info .mini-text{
+  margin-top: 32px;
+  text-align: center;
+}
+
 @import "responsive";
